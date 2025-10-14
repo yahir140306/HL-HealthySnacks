@@ -1,42 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>HL - Healthy Snacks</title>
-
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <title>HL - Healthy Snacks | Alimentación Saludable</title>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Healthy Snacks</h1>
-                <h2>HL</h2>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Alcanza tus metas</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#services">Recursos de Bienestar</a></li>
-                <li><a href="#network">Oportunidad de negocio</a></li>
-                <li><a href="#about">Acerca de HL</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>Healthy Snacks</h1>
+          <h2>HL</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#cotizacion">Cotización</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <!-- carrusel -->
-        <section>
 
-        </section>
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Transforma tu vida con alimentación saludable</h1>
+          <p>
+            Planes alimenticios personalizados para diabéticos, deportistas y
+            público en general
+          </p>
+          <a href="#cotizacion" class="btn-primary">Solicita tu cotización</a>
+        </div>
+      </section>
+
+      <!-- Planes Alimenticios -->
+      <section id="planes" class="planes-section">
+        <div class="container">
+          <h2 class="section-title">Nuestros Planes Alimenticios</h2>
+          <div class="planes-grid">
+            <div class="plan-card">
+              <h3>Plan Diabético</h3>
+              <p>
+                Alimentación balanceada y controlada para personas con diabetes
+              </p>
+              <ul>
+                <li>Control de carbohidratos</li>
+                <li>Bajo índice glucémico</li>
+                <li>Comidas equilibradas</li>
+                <li>Snacks saludables</li>
+              </ul>
+              <a href="#cotizacion" class="btn-secondary">Solicitar</a>
+            </div>
+            <div class="plan-card featured">
+              <h3>Plan Deportista</h3>
+              <p>
+                Nutrición optimizada para atletas y deportistas de alto
+                rendimiento
+              </p>
+              <ul>
+                <li>Alto en proteínas</li>
+                <li>Energía sostenida</li>
+                <li>Recuperación muscular</li>
+                <li>Hidratación adecuada</li>
+              </ul>
+              <a href="#cotizacion" class="btn-secondary">Solicitar</a>
+            </div>
+            <div class="plan-card">
+              <h3>Plan General</h3>
+              <p>
+                Alimentación saludable para mantenerte en forma y con energía
+              </p>
+              <ul>
+                <li>Nutrición balanceada</li>
+                <li>Ingredientes frescos</li>
+                <li>Variedad de opciones</li>
+                <li>Control de porciones</li>
+              </ul>
+              <a href="#cotizacion" class="btn-secondary">Solicitar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Productos -->
+      <section id="productos" class="productos-section">
+        <div class="container">
+          <h2 class="section-title">Nuestros Productos</h2>
+          <div class="productos-grid">
+            <div class="producto-card">
+              <div class="producto-img">🥗</div>
+              <h3>Ensaladas Frescas</h3>
+              <p>Mezclas de vegetales frescos con proteínas magras</p>
+              <span class="precio">$85 MXN</span>
+            </div>
+            <div class="producto-card">
+              <div class="producto-img">🥙</div>
+              <h3>Wraps Proteicos</h3>
+              <p>Tortillas integrales con pollo, pavo o atún</p>
+              <span class="precio">$95 MXN</span>
+            </div>
+            <div class="producto-card">
+              <div class="producto-img">🍲</div>
+              <h3>Bowls Nutritivos</h3>
+              <p>Quinoa, arroz integral con vegetales y proteína</p>
+              <span class="precio">$110 MXN</span>
+            </div>
+            <div class="producto-card">
+              <div class="producto-img">🥤</div>
+              <h3>Smoothies Naturales</h3>
+              <p>Batidos de frutas y vegetales sin azúcar añadida</p>
+              <span class="precio">$65 MXN</span>
+            </div>
+            <div class="producto-card">
+              <div class="producto-img">🥜</div>
+              <h3>Snacks Saludables</h3>
+              <p>Frutos secos, barras de proteína y frutas</p>
+              <span class="precio">$45 MXN</span>
+            </div>
+            <div class="producto-card">
+              <div class="producto-img">🍱</div>
+              <h3>Meal Prep Completo</h3>
+              <p>Comida completa lista para calentar y consumir</p>
+              <span class="precio">$135 MXN</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario de Cotización -->
+      <section id="cotizacion" class="cotizacion-section">
+        <div class="container">
+          <h2 class="section-title">Solicita tu Cotización</h2>
+          <form class="cotizacion-form" id="formCotizacion">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo *</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="tipoPlan">Tipo de Plan *</label>
+              <select id="tipoPlan" name="tipoPlan" required>
+                <option value="">Selecciona un plan</option>
+                <option value="diabetico">Plan Diabético</option>
+                <option value="deportista">Plan Deportista/Atleta</option>
+                <option value="general">Plan General</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Modalidad de Plan Semanal *</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="modalidad"
+                    value="menu"
+                    id="modalidadMenu"
+                    checked
+                  />
+                  <span
+                    >Variante 1: Armar plan con productos del menú
+                    existente</span
+                  >
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="modalidad"
+                    value="macros"
+                    id="modalidadMacros"
+                  />
+                  <span
+                    >Variante 2: Personalizar según mis macronutrientes</span
+                  >
+                </label>
+              </div>
+            </div>
+
+            <!-- Sección para Variante 1: Productos del Menú -->
+            <div id="seccionMenu" class="variante-section">
+              <h3>Selecciona tus productos semanales</h3>
+              <div class="form-group">
+                <label for="diasSemana">Días de entrega por semana *</label>
+                <select id="diasSemana" name="diasSemana">
+                  <option value="5">5 días (Lun-Vie)</option>
+                  <option value="6">6 días (Lun-Sáb)</option>
+                  <option value="7">7 días (Toda la semana)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Productos que deseas incluir (selecciona varios)</label>
+                <div class="checkbox-group">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="productos"
+                      value="ensaladas"
+                    />
+                    Ensaladas Frescas</label
+                  >
+                  <label
+                    ><input type="checkbox" name="productos" value="wraps" />
+                    Wraps Proteicos</label
+                  >
+                  <label
+                    ><input type="checkbox" name="productos" value="bowls" />
+                    Bowls Nutritivos</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="productos"
+                      value="smoothies"
+                    />
+                    Smoothies Naturales</label
+                  >
+                  <label
+                    ><input type="checkbox" name="productos" value="snacks" />
+                    Snacks Saludables</label
+                  >
+                  <label
+                    ><input type="checkbox" name="productos" value="mealprep" />
+                    Meal Prep Completo</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="comidasDia">Comidas por día *</label>
+                <select id="comidasDia" name="comidasDia">
+                  <option value="2">2 comidas</option>
+                  <option value="3">3 comidas</option>
+                  <option value="4">4 comidas</option>
+                  <option value="5">5 comidas</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Sección para Variante 2: Macronutrientes -->
+            <div
+              id="seccionMacros"
+              class="variante-section"
+              style="display: none"
+            >
+              <h3>Especifica tus necesidades nutricionales</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="calorias">Calorías diarias (kcal) *</label>
+                  <input
+                    type="number"
+                    id="calorias"
+                    name="calorias"
+                    min="1000"
+                    max="5000"
+                    placeholder="Ej: 2000"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="proteinas">Proteínas (g) *</label>
+                  <input
+                    type="number"
+                    id="proteinas"
+                    name="proteinas"
+                    min="0"
+                    placeholder="Ej: 150"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="carbohidratos">Carbohidratos (g) *</label>
+                  <input
+                    type="number"
+                    id="carbohidratos"
+                    name="carbohidratos"
+                    min="0"
+                    placeholder="Ej: 200"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="grasas">Grasas (g) *</label>
+                  <input
+                    type="number"
+                    id="grasas"
+                    name="grasas"
+                    min="0"
+                    placeholder="Ej: 60"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="restricciones"
+                  >Restricciones alimentarias o alergias</label
+                >
+                <textarea
+                  id="restricciones"
+                  name="restricciones"
+                  rows="3"
+                  placeholder="Ej: Sin lactosa, sin gluten, alérgico a frutos secos..."
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="diasSemanaMacros"
+                  >Días de entrega por semana *</label
+                >
+                <select id="diasSemanaMacros" name="diasSemanaMacros">
+                  <option value="5">5 días (Lun-Vie)</option>
+                  <option value="6">6 días (Lun-Sáb)</option>
+                  <option value="7">7 días (Toda la semana)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="comentarios">Comentarios adicionales</label>
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="4"
+                placeholder="Cuéntanos más sobre tus necesidades..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Enviar Cotización</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Puntos de Entrega -->
+      <section id="puntos-entrega" class="puntos-section">
+        <div class="container">
+          <h2 class="section-title">Puntos de Entrega</h2>
+          <div class="puntos-grid">
+            <div class="punto-card">
+              <h3>📍 Zona Norte</h3>
+              <p>Centros comerciales y gimnasios principales</p>
+              <span>Horario: 7:00 AM - 2:00 PM</span>
+            </div>
+            <div class="punto-card">
+              <h3>📍 Zona Centro</h3>
+              <p>Oficinas corporativas y plazas comerciales</p>
+              <span>Horario: 8:00 AM - 3:00 PM</span>
+            </div>
+            <div class="punto-card">
+              <h3>📍 Zona Sur</h3>
+              <p>Parques y centros deportivos</p>
+              <span>Horario: 7:00 AM - 2:00 PM</span>
+            </div>
+            <div class="punto-card">
+              <h3>🚗 Entrega a Domicilio</h3>
+              <p>Disponible en toda la ciudad</p>
+              <span>Horario: 6:00 AM - 4:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonios -->
+      <section id="testimonios" class="testimonios-section">
+        <div class="container">
+          <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+          <div class="testimonios-grid">
+            <div class="testimonio-card">
+              <div class="testimonio-header">
+                <div class="avatar">M</div>
+                <div>
+                  <h4>María González</h4>
+                  <span>Plan Diabético</span>
+                </div>
+              </div>
+              <p>
+                "Desde que comencé con HL Healthy Snacks, mis niveles de glucosa
+                han mejorado significativamente. Las comidas son deliciosas y
+                perfectamente balanceadas."
+              </p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="testimonio-card">
+              <div class="testimonio-header">
+                <div class="avatar">C</div>
+                <div>
+                  <h4>Carlos Ramírez</h4>
+                  <span>Plan Deportista</span>
+                </div>
+              </div>
+              <p>
+                "Como atleta, necesito una nutrición precisa. HL me ha ayudado a
+                mejorar mi rendimiento y recuperación. ¡100% recomendado!"
+              </p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="testimonio-card">
+              <div class="testimonio-header">
+                <div class="avatar">A</div>
+                <div>
+                  <h4>Ana Martínez</h4>
+                  <span>Plan General</span>
+                </div>
+              </div>
+              <p>
+                "Me encanta la variedad de platillos y lo conveniente del
+                servicio. Ya no tengo que preocuparme por cocinar y sigo
+                comiendo saludable."
+              </p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto y Redes Sociales -->
+      <section id="contacto" class="contacto-section">
+        <div class="container">
+          <h2 class="section-title">Conéctate con nosotros</h2>
+          <div class="contacto-content">
+            <div class="contacto-info">
+              <h3>Información de Contacto</h3>
+              <p>📧 Email: contacto@hlhealthysnacks.com</p>
+              <p>📱 WhatsApp: +52 123 456 7890</p>
+              <p>⏰ Horario de atención: Lun-Vie 7:00 AM - 6:00 PM</p>
+            </div>
+            <div class="redes-sociales">
+              <h3>Síguenos en Redes Sociales</h3>
+              <div class="social-links">
+                <a href="#" class="social-link facebook">📘 Facebook</a>
+                <a href="#" class="social-link instagram">📷 Instagram</a>
+                <a href="#" class="social-link twitter">🐦 Twitter</a>
+                <a href="#" class="social-link tiktok">🎵 TikTok</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- comentarios -->
-    <!-- <aside>
-        <section>
-            <article>
-                <h2>Marisol</h2>
-            </article>
-        </section>
-    </aside> -->
-</body>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>HL Healthy Snacks</h3>
+            <p>Tu mejor opción para una alimentación saludable y balanceada</p>
+          </div>
+          <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+              <li><a href="#planes">Planes</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#cotizacion">Cotización</a></li>
+              <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Email: contacto@hlhealthysnacks.com</p>
+            <p>WhatsApp: +52 123 456 7890</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 HL Healthy Snacks. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Script para cambiar entre variantes del formulario
+      const modalidadMenu = document.getElementById("modalidadMenu");
+      const modalidadMacros = document.getElementById("modalidadMacros");
+      const seccionMenu = document.getElementById("seccionMenu");
+      const seccionMacros = document.getElementById("seccionMacros");
+
+      modalidadMenu.addEventListener("change", function () {
+        if (this.checked) {
+          seccionMenu.style.display = "block";
+          seccionMacros.style.display = "none";
+        }
+      });
+
+      modalidadMacros.addEventListener("change", function () {
+        if (this.checked) {
+          seccionMenu.style.display = "none";
+          seccionMacros.style.display = "block";
+        }
+      });
+
+      // Manejar envío del formulario
+      document
+        .getElementById("formCotizacion")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "¡Gracias por tu cotización! Nos pondremos en contacto contigo pronto."
+          );
+          this.reset();
+          seccionMenu.style.display = "block";
+          seccionMacros.style.display = "none";
+        });
+
+      // Smooth scroll para los enlaces de navegación
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
