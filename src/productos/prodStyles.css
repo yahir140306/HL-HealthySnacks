@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* HEADER STYLES*/
+.nav__container{
+    background-color: rgb(212, 155, 70);
+    margin: 0;
+    padding: 10px 20px;
+}
+
+img{
+    margin: 0;
+    height: 50px;
+}
+
+
+.elementos__nav{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center; /* centra verticalmente logo + menú */
+    justify-content: space-between; /* opcional: separa logo y menú */
+
+
+}
+
+.elementos__nav-item{
+    padding: 0 5px;
+  
+}
+
+
+.elementos__nav-link{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.paginaPrincipal{
+    color: #10691c;
+}
+.separador{
+    flex-grow: 1;
+}
+
+.buscarIcon{
+    height: 30px;
+}
+
+.buscarIcon:hover{
+    opacity: .7;
+}
+
+/* HEADER ENDS*/
+
+/* MAIN STYLES*/
+
+.main{
+    margin: 0;
+
+}
+/* BUSCAR STYLES*/
+
+.main__div-buscar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+
+.main__div-item{
+    display: flex;              
+    align-items: center;        /* centra verticalmente */
+    gap: 8px;                   /* espacio entre imagen y texto */
+    
+    border: none;
+    background-color: #d49b46; 
+    color: white;
+    
+    border-radius: 0 12px 12px 0;
+    padding: 0 10px;
+        
+}
+.main__div-item:hover{
+    opacity: .6;
+}
+
+.main__div-item img{
+    width: 20px;  
+    height: 20px;
+}
+
+.div-container{
+    flex-grow: 2;
+    justify-content: end;
+    border-radius: 28px 0 0 28px;   
+    padding: 10px;
+}
+.div-container:hover{
+    opacity: 1;
+}
+.div-container span{
+    color: rgb(40, 41, 40);
+}
+.div-container button{
+    color: #000;
+    border: 1px solid #7f7fad;
+    opacity: .7;
+    padding: 10px;
+    transition: border-radious,.3s;
+}
+.div-container button:hover{
+    opacity: .5;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+
+/* BUSCAR ENDS*/
+
+/* PRODUCTOS STYLES*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+   
+    
+}
+.producto-container{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    align-items: center;
+   
+
+    
+       
+}
+.img-container{
+    background-color: #ebe9e9;
+    border-radius: 16px 16px 0 0;
+    display: flex;                
+    justify-content: center;      /* centra verticalmente */
+    align-items: center;          /* centra horizontalmente */
+    padding: 10px; 
+}
+.img-container img{
+    height: 200px;
+    flex-shrink: 1;
+    
+}
+
+.producto-info{
+    padding: 10px 40px;
+    background-color: rgb(255, 255, 255);
+}
+.titulo{
+    font-size: 62px;
+    margin: 0;
+}
+.info-nutrimental{
+    font-size: 32px;
+    margin: 0;
+}
+.precio{
+    font-size: 30px;
+    font-style: oblique;
+}
+/* PRODUCTOS ENDS*/
